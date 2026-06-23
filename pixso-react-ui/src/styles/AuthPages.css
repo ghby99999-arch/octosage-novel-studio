@@ -1,0 +1,234 @@
+.octo-auth-shell {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(360px, 1.05fr) minmax(420px, 0.95fr);
+  background: #ffffff;
+  color: #0d0d0d;
+  overflow: hidden;
+}
+
+.octo-auth-rail {
+  padding: 56px 56px 40px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(250, 250, 250, 0.92)),
+    var(--octo-workspace-bg, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  border-right: 1px solid #e8e8e8;
+}
+
+.octo-auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.octo-auth-brand-mark {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.octo-auth-brand p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter-Semi Bold", "Microsoft YaHei", sans-serif;
+  font-weight: 600;
+  color: #0d0d0d;
+}
+
+.octo-auth-brand span {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #7a7a7a;
+}
+
+.octo-auth-copy {
+  max-width: 420px;
+}
+
+.octo-auth-copy h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  color: #0d0d0d;
+  font-family: "Inter-Bold", "Microsoft YaHei", sans-serif;
+}
+
+.octo-auth-copy p {
+  margin: 18px 0 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #7a7a7a;
+  max-width: 34rem;
+}
+
+.octo-auth-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.octo-auth-points span {
+  height: 30px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #f7f7f7;
+  color: #6f665d;
+  font-size: 12px;
+  line-height: 18px;
+  border: 1px solid #e8e8e8;
+}
+
+.octo-auth-panel {
+  padding: 56px 48px;
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.octo-auth-card {
+  width: min(100%, 420px);
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 12px 32px rgba(13, 13, 13, 0.06);
+}
+
+.octo-auth-card-head {
+  margin-bottom: 22px;
+}
+
+.octo-auth-card-head p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Inter-Bold", "Microsoft YaHei", sans-serif;
+  font-weight: 700;
+  color: #0d0d0d;
+}
+
+.octo-auth-card-head span {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #7a7a7a;
+}
+
+.octo-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.octo-auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.octo-auth-field span {
+  font-size: 12px;
+  line-height: 18px;
+  color: #7a7a7a;
+}
+
+.octo-auth-field input {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #e8e8e8;
+  background: #ffffff;
+  color: #0d0d0d;
+  font: inherit;
+  outline: none;
+}
+
+.octo-auth-field input::placeholder {
+  color: #b0b0b0;
+}
+
+.octo-auth-field input:focus {
+  border-color: rgba(124, 58, 237, 0.55);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+.octo-auth-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.octo-auth-row a {
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+.octo-auth-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #7a7a7a;
+}
+
+.octo-auth-check input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: #7c3aed;
+}
+
+.octo-auth-primary {
+  height: 44px;
+  border: 0;
+  background: #7c3aed;
+  color: #ffffff;
+  font: inherit;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "Inter-Semi Bold", "Microsoft YaHei", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.octo-auth-primary:active {
+  transform: scale(0.99);
+}
+
+@media (max-width: 1040px) {
+  .octo-auth-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .octo-auth-rail {
+    border-right: 0;
+    border-bottom: 1px solid rgba(24, 20, 18, 0.08);
+  }
+}
+
+@media (max-width: 720px) {
+  .octo-auth-rail,
+  .octo-auth-panel {
+    padding: 28px 20px;
+  }
+
+  .octo-auth-copy h1 {
+    font-size: 24px;
+  }
+}

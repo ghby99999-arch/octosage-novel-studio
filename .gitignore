@@ -1,0 +1,35 @@
+﻿node_modules/
+dist/
+out/
+.tmp/
+tmp/
+*.log
+*.err.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.octosage-trash/
+.octo-quality-sample*/
+tmp-smoke-projects/
+_tmp*/
+reports/
+*.local.json
+*.secret.json
+*.key
+*.pem
+coverage/
+.playwright-cli/
+
+# Generated author projects and manuscripts should not be committed.
+正文/
+章卡/
+审稿/
+记忆/
+导出/
+素材/
+tasks/
+
+# Local screenshots and visual probes.
+tmp-octosage-*.png

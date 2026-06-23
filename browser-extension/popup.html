@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>OctoSage Data Sync</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 320px;
+      margin: 0;
+      padding: 12px;
+      font: 13px/1.4 system-ui, -apple-system, Segoe UI, sans-serif;
+      color: #e8ddcc;
+      background: #1a1714;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+      font-weight: 600;
+    }
+    input, select {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px;
+      border: 1px solid rgba(212,168,83,0.22);
+      border-radius: 6px;
+      background: #24211e;
+      color: #e8ddcc;
+    }
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 9px;
+      border: 0;
+      border-radius: 6px;
+      background: #d4a853;
+      color: #171411;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    #status {
+      white-space: pre-wrap;
+      margin-top: 10px;
+      padding: 8px;
+      border-radius: 6px;
+      background: #24211e;
+      border: 1px solid rgba(212,168,83,0.18);
+    }
+  </style>
+</head>
+<body>
+  <strong>OctoSage Data Sync</strong>
+  <label for="rootPath">portfolio root</label>
+  <input id="rootPath" placeholder="C:\Users\you\Documents\OctoSage\Projects">
+  <label for="projectPath">projectPath</label>
+  <input id="projectPath" placeholder="C:\Users\you\Documents\OctoSage\Projects\book-01">
+  <label for="chapterNo">chapter</label>
+  <input id="chapterNo" value="1">
+  <label for="outcome">outcome</label>
+  <select id="outcome">
+    <option value="high_retention">high_retention</option>
+    <option value="premium">premium</option>
+    <option value="observed">observed</option>
+    <option value="low_retention">low_retention</option>
+  </select>
+  <label for="referenceName">Reference structure</label>
+  <input id="referenceName" placeholder="benchmark-book">
+  <label for="referenceChapterNo">reference chapter</label>
+  <input id="referenceChapterNo" value="1">
+  <button id="saveConfig">Save config</button>
+  <button id="syncNow">Sync current page</button>
+  <button id="syncReferenceNow">Sync reference structure</button>
+  <div id="status">Only visible author-owned metrics are synced. Raw prose is not saved.</div>
+  <script src="popup.js"></script>
+</body>
+</html>
+

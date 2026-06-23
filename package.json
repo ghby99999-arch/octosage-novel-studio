@@ -1,0 +1,77 @@
+{
+    "name":  "octosage",
+    "version":  "1.100.0",
+    "productName":  "OctoSage",
+    "description":  "Self-evolving AI writing system for Chinese commercial fiction.",
+    "private":  false,
+    "type":  "module",
+    "main":  "src/desktop-main.mjs",
+    "bin":  {
+                "novel":  "./src/cli.mjs"
+            },
+    "scripts":  {
+                    "test":  "node --test",
+                    "check":  "node --check src/cli.mjs \u0026\u0026 node --check src/server.mjs \u0026\u0026 node --check src/task-store.mjs \u0026\u0026 node --check src/desktop-main.mjs \u0026\u0026 node --check src/desktop-preload.cjs \u0026\u0026 node --check scripts/desktop-readiness.mjs",
+                    "serve":  "node src/cli.mjs serve",
+                    "desktop":  "electron .",
+                    "desktop:check":  "node scripts/desktop-readiness.mjs",
+                    "desktop:smoke":  "node scripts/desktop-smoke.mjs --no-launch",
+                    "extension:install":  "node scripts/install-browser-extension.mjs",
+                    "build:ui":  "cd pixso-react-ui \u0026\u0026 npm run build",
+                    "build:win":  "npm run build:ui \u0026\u0026 npm run desktop:check \u0026\u0026 electron-builder --win",
+                    "build:check":  "node scripts/check-build-artifacts.mjs",
+                    "release:check":  "node scripts/release-readiness.mjs",
+                    "commercial:check":  "node scripts/commercial-release-gate.mjs"
+                },
+    "build":  {
+                  "appId":  "cn.octosage.app",
+                  "productName":  "OctoSage",
+                  "directories":  {
+                                      "output":  "dist"
+                                  },
+                  "files":  [
+                                "src/**/*",
+                                "scripts/**/*",
+                                "assets/**/*",
+                                "docs/**/*",
+                                "pixso-react-ui/dist/**/*",
+                                "browser-extension/**/*",
+                                "package.json",
+                                "README.md",
+                                "CHANGELOG.md"
+                            ],
+                  "win":  {
+                              "icon":  "assets/icon.ico",
+                              "target":  [
+                                             {
+                                                 "target":  "nsis",
+                                                 "arch":  [
+                                                              "x64"
+                                                          ]
+                                             }
+                                         ],
+                              "artifactName":  "OctoSage-${version}-${arch}.${ext}"
+                          },
+                  "nsis":  {
+                               "oneClick":  false,
+                               "allowToChangeInstallationDirectory":  true,
+                               "perMachine":  false,
+                               "createDesktopShortcut":  true,
+                               "createStartMenuShortcut":  true,
+                               "shortcutName":  "OctoSage"
+                           }
+              },
+    "devDependencies":  {
+                            "electron":  "^42.2.0",
+                            "electron-builder":  "^26.8.1"
+                        },
+    "license":  "MIT",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "https://github.com/YOUR_GITHUB/octosage-novel-studio.git"
+                   },
+    "homepage":  "https://github.com/YOUR_GITHUB/octosage-novel-studio#readme",
+    "bugs":  {
+                 "url":  "https://github.com/YOUR_GITHUB/octosage-novel-studio/issues"
+             }
+}

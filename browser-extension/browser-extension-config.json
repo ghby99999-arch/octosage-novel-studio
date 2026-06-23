@@ -1,0 +1,16 @@
+{
+  "project_path": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\novel-studio-v153-extension-F636BD\\book-a",
+  "root_path": "",
+  "local_ingest_url": "http://127.0.0.1:18787/api/portfolio/data/ingest",
+  "local_project_ingest_url": "http://127.0.0.1:18787/api/data/ingest",
+  "saved_source_text": false,
+  "safety": [
+    "No silent install",
+    "No login automation",
+    "No captcha bypass",
+    "No paywall bypass",
+    "No publishing or commenting automation",
+    "Only visible author-owned metrics are synced"
+  ],
+  "updated_at": "2026-06-22T21:49:59.263Z"
+}

@@ -1,0 +1,43 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Static checks
+        run: npm run check
+
+      - name: Tests
+        run: npm test
+
+      - name: Desktop smoke
+        run: npm run desktop:smoke
+
+      - name: Build installer
+        run: npm run build:win
+
+      - name: Build artifact check
+        run: npm run build:check
+
+      - name: Release readiness
+        run: npm run release:check
+
+      - name: Commercial gate
+        run: npm run commercial:check

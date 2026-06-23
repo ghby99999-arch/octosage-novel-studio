@@ -1,0 +1,14 @@
+{
+  "root": ".",
+  "saved_source_text": false,
+  "update_policy": "auto_from_authorized_visible_reference_sources",
+  "references": [],
+  "safety_rules": [
+    "authorized_visible_reference_sources_only",
+    "structure_fingerprints_only",
+    "no_raw_reference_prose_saved",
+    "no_wash_writing"
+  ],
+  "updated_at": "2026-06-23T00:00:00.000Z",
+  "path": "public_reference_library.json"
+}
