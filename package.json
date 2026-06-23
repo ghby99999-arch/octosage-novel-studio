@@ -1,4 +1,4 @@
-{
+﻿{
     "name":  "octosage",
     "version":  "1.100.0",
     "productName":  "OctoSage",
@@ -68,10 +68,11 @@
     "license":  "MIT",
     "repository":  {
                        "type":  "git",
-                       "url":  "https://github.com/YOUR_GITHUB/octosage-novel-studio.git"
+                       "url":  "https://github.com/ghby99999-arch/octosage-novel-studio.git"
                    },
-    "homepage":  "https://github.com/YOUR_GITHUB/octosage-novel-studio#readme",
+    "homepage":  "https://github.com/ghby99999-arch/octosage-novel-studio#readme",
     "bugs":  {
-                 "url":  "https://github.com/YOUR_GITHUB/octosage-novel-studio/issues"
+                 "url":  "https://github.com/ghby99999-arch/octosage-novel-studio/issues"
              }
 }
+

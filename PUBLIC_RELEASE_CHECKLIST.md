@@ -2,7 +2,7 @@
 
 Before making this repository public:
 
-- [ ] Replace `YOUR_GITHUB` in `package.json`, `README.md`, and `OPEN_SOURCE_APPLICATION_DRAFT.md` with the real GitHub owner.
+- [x] Replace GitHub owner placeholders in public metadata.
 - [ ] Review `assets/` for image ownership and decide which generated/mock assets are safe to publish.
 - [ ] Confirm the chosen license is MIT, or replace `LICENSE` before publishing.
 - [ ] Run secret scan:
@@ -24,7 +24,7 @@ npm.cmd install
 npm.cmd run build
 ```
 
-- [ ] Create a fresh GitHub repository named `octosage-novel-studio`.
+- [x] Create a fresh GitHub repository named `octosage-novel-studio`.
 - [ ] Push this cleaned package, not the original working folder.
 - [ ] Use `OPEN_SOURCE_APPLICATION_DRAFT.md` to fill the Codex for Open Source form.
 
@@ -37,3 +37,4 @@ Do not publish:
 - `dist`
 - local smoke-test projects
 - screenshots/log files unless intentionally curated
+

@@ -4,7 +4,7 @@ Use this as a draft when filling the Codex for Open Source form.
 
 ## Project URL
 
-https://github.com/YOUR_GITHUB/octosage-novel-studio
+https://github.com/ghby99999-arch/octosage-novel-studio
 
 ## What does this repository do?
 
@@ -37,3 +37,4 @@ This is a small project with limited maintainer time. Codex access would reduce 
 ## Responsible-use statement
 
 The project is designed for author-owned work. Reference-reading workflows should only process visible, authorized content and store structure-level fingerprints rather than copying source prose. Publishing helpers should keep final submission under user control.
+
